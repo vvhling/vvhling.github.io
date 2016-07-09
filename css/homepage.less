@@ -20,7 +20,7 @@
   .banner_content{
     width: 800px;
     height: 290px;
-    margin-top: 320px;
+    margin-top: 20%;
     margin-left: 20%;
     .p_title{
       font-size: 60px;
@@ -75,11 +75,15 @@
     }
   }
   .banner{
+    width: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
     li{
       float: left;
+    }
+    img{
+      width: 100%;
     }
   }
 }
@@ -472,6 +476,32 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1680px) {
+  .banner_top .btn_slideLR{
+      margin-top: -270px;
+    }
+  .banner_top{
+    height: 800px;
+  }
 }
+@media screen and (max-width: 1600px) {
+  .banner_top{
+    height: 750px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .banner_top{
+    height: 690px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .banner_top{
+    height: 640px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .banner_top{
+    height: 620px;
+  }
+}
+
