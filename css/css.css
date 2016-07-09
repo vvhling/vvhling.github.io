@@ -315,8 +315,8 @@
   height: 300px;
   clear: both;
   text-align: center;
-  background: url("../images/banner_middle.png") no-repeat;
   padding-top: 160px;
+  position: relative;
 }
 .banner_middle .ban_mid_con_cn {
   color: #ffffff;
@@ -326,6 +326,13 @@
   color: #ffffff;
   font-size: 13px;
   line-height: 30px;
+}
+.banner_middle .ban-mid {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 /*第六部分：cooparetion*/
 .cooperation {
@@ -472,6 +479,12 @@
   .banner_top {
     height: 690px;
   }
+  .banner_middle {
+    height: 210px;
+  }
+  .ban_mid_con_cn {
+    margin-top: -30px;
+  }
 }
 @media screen and (max-width: 1340px) {
   .banner_top {
@@ -481,6 +494,9 @@
 @media screen and (max-width: 1220px) {
   .banner_top {
     height: 620px;
+  }
+  .ban_mid_con_cn {
+    margin-top: -50px;
   }
 }
 * {
